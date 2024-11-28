@@ -26,8 +26,7 @@ https://ethereum-sepolia-beacon-api.publicnode.com
 docker-compose up -d
 
 3. check curl
-curl -d '{"id":1,"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["latest",false]}' \
-  -H "Content-Type: application/json" http://localhost:8545
+   curl -d '{"id":1,"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["latest",false]}' \ -H "Content-Type: application/json" http://localhost:8545
 
 - check log unichain op node 
 docker logs unichain-node-op-node-1
@@ -44,6 +43,7 @@ docker-compose up -d
 cat ~/unichain-node/geth-data/geth/nodekey (nếu không được thì vào thẳng thư mục copy)
 
 5. deploy contract
+   
 [ -f "unichain.sh" ] && rm unichain.sh; wget -q https://raw.githubusercontent.com/zunxbt/unichain/refs/heads/main/unichain.sh && chmod +x unichain.sh && ./unichain.sh
 
 điền privekey và tên token là xong
