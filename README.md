@@ -1,7 +1,7 @@
 # unichain-node-testnet
 code chạy
 1. update
-2. 
+
 sudo apt update && sudo apt upgrade -y
 
 sudo apt install docker.io
